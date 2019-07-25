@@ -42,14 +42,6 @@ namespace asg2
                 listElement = Console.ReadLine();
                 Console.WriteLine("Add price:");
                 price = Convert.ToInt32(Console.ReadLine());
-                foreach (string n in ProductList)
-                {
-                    if (listElement == n)
-                    {
-                        GrandTotal.Add(price);
-                        return;
-                    }
-                }
                 ProductList.Add(listElement);
                 GrandTotal.Add(price);
             }
@@ -57,16 +49,19 @@ namespace asg2
             {
                 Console.WriteLine("Add product:");
                 listElement = Console.ReadLine();
-                Console.WriteLine("Add price:");
-                price = Convert.ToInt32(Console.ReadLine());
+                int i = 0;
                 foreach (string n in ProductList)
                 {
                     if (listElement == n)
                     {
-                        GrandTotal.Add(price);
+                        ProductList.Add(listElement);
+                        GrandTotal.Add(GrandTotal[i]);
                         return;
                     }
+                    i++;
                 }
+                Console.WriteLine("Add price:");
+                price = Convert.ToInt32(Console.ReadLine());
                 ProductList.Add(listElement);
                 GrandTotal.Add(price);
             }
@@ -76,7 +71,7 @@ namespace asg2
         {
             Console.WriteLine("Enter product name:");
             String Product = Console.ReadLine();
-            int i=0;
+            int i = 0;
             foreach (string n in ProductList)
             {
                 if (Product == n)
@@ -114,12 +109,15 @@ namespace asg2
             Console.WriteLine("Id:"+Id);
             Console.WriteLine("Customer:"+Customer);
             Console.WriteLine("Item list:");
+            int i = 0;
             foreach (String n in ProductList)
             {
-                Console.WriteLine("---Item: "+n);   
+                Console.WriteLine("---Item: "+n+" (price: "+GrandTotal[i]+")");
+                i++;
             }
             Console.WriteLine("City:"+City);
             Console.WriteLine("Country:"+Country);
+            Console.WriteLine("----------------------------");
             Console.WriteLine("Total:"+grandTotal);
             Console.WriteLine("----------------------------");
         }

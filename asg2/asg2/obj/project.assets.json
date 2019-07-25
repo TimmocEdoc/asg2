@@ -693,11 +693,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\projects\\asg2\\asg2\\asg2\\asg2.csproj",
+      "projectUniqueName": "D:\\projects\\asg\\asg2\\asg2\\asg2.csproj",
       "projectName": "asg2",
-      "projectPath": "D:\\projects\\asg2\\asg2\\asg2\\asg2.csproj",
+      "projectPath": "D:\\projects\\asg\\asg2\\asg2\\asg2.csproj",
       "packagesPath": "C:\\Users\\ADMIN\\.nuget\\packages\\",
-      "outputPath": "D:\\projects\\asg2\\asg2\\asg2\\obj\\",
+      "outputPath": "D:\\projects\\asg\\asg2\\asg2\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\ADMIN\\AppData\\Roaming\\NuGet\\NuGet.Config"

@@ -1,10 +1,10 @@
 ﻿{
   "version": "1.0.0",
   "restore": {
-    "projectUniqueName": "D:\\projects\\asg2\\asg2\\asg2\\asg2.csproj",
+    "projectUniqueName": "D:\\projects\\asg\\asg2\\asg2\\asg2.csproj",
     "projectName": "asg2",
-    "projectPath": "D:\\projects\\asg2\\asg2\\asg2\\asg2.csproj",
-    "outputPath": "D:\\projects\\asg2\\asg2\\asg2\\obj\\",
+    "projectPath": "D:\\projects\\asg\\asg2\\asg2\\asg2.csproj",
+    "outputPath": "D:\\projects\\asg\\asg2\\asg2\\obj\\",
     "projectStyle": "PackageReference",
     "originalTargetFrameworks": [
       "netcoreapp2.2"
